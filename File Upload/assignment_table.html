@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Assignment Table</title>
+</head>
+
+<body bgcolor="#F7F4FF">
+	<fieldset>
+		<legend><h1>Assignment Table</h1></legend>
+		<!--<script> setTimeout(function() { window.location='assignment_table.html'; }, 5000); </script> -->
+
+		<form name="Assingment Table" action="assignment_table.php" method="POST" enctype='multipart/form-data'>
+		<!-- <meta http-equiv="refresh" content="3;url=assignment_table.html"> -->
+	
+			<label>Discipline ID :</label>
+				<select name="discipline_id" required="required">	<option value = "1">A</option>
+ 																	<option value = "2">B</option>
+ 																	<option value = "3">C</option>
+ 																	<option value = "4">D</option></select><br/> <br/>
+ 			<label>Branch ID :</label>
+				<select name="branch_id" required="required">		<option value = "1">A</option>
+ 																	<option value = "2">B</option>
+ 																	<option value = "3">C</option>
+ 																	<option value = "4">D</option></select><br/> <br/>
+ 			<label>Sem ID :</label>
+				<select name="sem_id" required="required">			<option value = "1">A</option>
+ 																	<option value = "2">B</option>
+ 																	<option value = "3">C</option>
+ 																	<option value = "4">D</option></select><br/> <br/>
+			<label>Div ID :</label>
+				<select name="div_id" required="required">			<option value = "1">A</option>
+ 																	<option value = "2">B</option>
+ 																	<option value = "3">C</option>
+ 																	<option value = "4">D</option></select><br/> <br/>
+ 			<label>Subect ID :</label>
+				<select name="sub_id" required="required">			<option value = "1">A</option>
+ 																	<option value = "2">B</option>
+ 																	<option value = "3">C</option>
+ 																	<option value = "4">D</option></select><br/> <br/>
+ 			<label>Faculty ID :</label>
+				<select name="faculty_id" required="required">		<option value = "1">A</option>
+ 																	<option value = "2">B</option>
+ 																	<option value = "3">C</option>
+ 																	<option value = "4">D</option></select><br/> <br/>
+			
+			<label>Assignment Number :</label>
+			<input type="char" size="2" name="ass_no" id="Assignment Number" required="required" placeholder="1,2..."/><br/><br />
+			<label>Link :</label>
+			<input type='file' name='file'> <br/><br/>
+			<label>Assign Date :</label>
+			<input type="date" name="assign_date" id="Assign Date" required="required" placeholder="DD/MM/YYYY"/><br/><br />
+			<label>Submission Date :</label>
+			<input type="date" name="submission_date" id="Submission Date" required="required" placeholder="DD/MM/YYYY"/><br/><br />
+			
+				<input type="submit" value=" Submit " name="insert"/>&nbsp;&nbsp; <input type="reset" value= "Clear" name="delete"/> 
+		</form>
+	</fieldset>
+</body>
+</html>
